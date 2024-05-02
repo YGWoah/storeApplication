@@ -1,0 +1,70 @@
+<div class="p-3">
+	<div class="card">
+		<div class="card-header">
+			<h3>Products</h3>
+		</div>
+		<div class="card-body">
+			{{ this.appState.appState.keyword }}
+			<input
+				type="text"
+				class="form-control"
+				[(ngModel)]="this.appState.appState.keyword"
+				placeholder="Product Name"
+			/>
+			<button (click)="handleSearchProduct()" class="btn btn-primary mt-2">
+				<i class="bi bi-search"></i>
+			</button>
+		</div>
+		<div class="card-body">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Price</th>
+						<th>Checked</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let product of this.appState.appState.products">
+						<td>{{ product.name }}</td>
+						<td>{{ product.price }}</td>
+						<td>
+							<button (click)="handleCheckProduct(product)" class="btn btn-outline">
+								<i [class]="product.checked ? 'bi bi-check' : 'bi bi-circle'"></i>
+							</button>
+						</td>
+						<td>
+							<button (click)="navigateToEditProduct(product)" class="btn btn-warning">
+								<i class="bi bi-pencil"></i>
+							</button>
+						</td>
+						<td>
+							<button (click)="handleDeleteProduct(product)" class="btn btn-danger">
+								<i class="bi bi-trash"></i>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div>
+				<ul class="nav nav-pills">
+					<li
+						*ngFor="
+							let page of [].constructor(appState.appState.totalPages);
+							let i = index
+						"
+						class="m-1"
+					>
+						<button
+							(click)="goToPage(i + 1)"
+							[class.btn-success]="this.appState.appState.currentPage === i + 1"
+							class="btn btn-outline-primary"
+						>
+							{{ i + 1 }}
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li *ngFor="let action of actions" class="nav-item">
+				<button
+					(click)="setCurrentAction(action)"
+					class="btn btn-succes ms-1"
+					[class]="action == currentAction ? 'btn-primary' : 'btn-success'"
+					routerLink="{{ action.route }}"
+				>
+					{{ action.title }}<i class="bi bi-{{ action.icon }}"></i>
+				</button>
+			</li>
+			<li *ngIf="this.appState.appState.status === 'LOADING...'">
+				<div class="spinner-border" role="status"></div>
+			</li>
+		</ul>
+	</div>
+</nav>

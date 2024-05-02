@@ -1,0 +1,33 @@
+<div class="p-3">
+	<div class="card">
+		<div class="card-body">
+			<div class="row">
+				<div class="col-md-6">
+					{{ formGroup.value | json }}
+					<form [formGroup]="formGroup" (ngSubmit)="saveProduct()">
+						<div class="mb-3">
+							<label for="name" class="form-label">Name</label>
+							<input type="text" class="form-control" formControlName="name" />
+						</div>
+						<div class="mb-3">
+							<label for="name" class="form-label">Price</label>
+							<input type="number" class="form-control" formControlName="price" />
+						</div>
+						<div class="mb-3">
+							<label for="name" class="form-label">Checked </label>
+							<input
+								type="checkbox"
+								class="form-check-input"
+								formControlName="checked"
+							/>
+						</div>
+						<button type="submit" class="btn btn-primary m-1">Save</button>
+						<button type="reset" class="btn btn-secondary m-1" (onclick)="resetForm()">
+							Reset
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

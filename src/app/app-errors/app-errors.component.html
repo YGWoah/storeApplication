@@ -1,0 +1,10 @@
+<div *ngIf="this.appState.appState.status === 'ERROR'">
+	<div class="alert alert-danger" role="alert">
+		<h4 class="alert-heading">Error</h4>
+		<p>
+			{{ this.appState.appState.error | json }}
+		</p>
+		<hr />
+		<p class="mb-0">Please try again later.</p>
+	</div>
+</div>
