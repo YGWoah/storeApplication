@@ -1,0 +1,112 @@
+{
+  "products": [
+    {
+      "id": "8",
+      "name": "Souris",
+      "price": 30,
+      "checked": true
+    },
+    {
+      "id": "9",
+      "name": "Ecran",
+      "price": 200,
+      "checked": true
+    },
+    {
+      "name": "PCccc",
+      "price": 800,
+      "checked": true,
+      "id": "10"
+    },
+    {
+      "id": "11",
+      "name": "PC",
+      "price": 800,
+      "checked": false
+    },
+    {
+      "id": "12",
+      "name": "Headphones",
+      "price": 120,
+      "checked": false
+    },
+    {
+      "id": "13",
+      "name": "Mousepad",
+      "price": 15,
+      "checked": false
+    },
+    {
+      "id": "14",
+      "name": "Webcam",
+      "price": 50,
+      "checked": false
+    },
+    {
+      "id": "15",
+      "name": "Microphone",
+      "price": 70,
+      "checked": false
+    },
+    {
+      "id": "53010.621627832894",
+      "name": "softwate",
+      "price": 1893,
+      "checked": false
+    },
+    {
+      "id": "5275913.84279209",
+      "name": "GKSD",
+      "price": 9009,
+      "checked": false
+    },
+    {
+      "id": "4477521.07711432",
+      "name": "dfgklsfdkg",
+      "price": 34958,
+      "checked": false
+    },
+    {
+      "id": "4882826.545808393",
+      "name": "dkmgsdkl",
+      "price": null,
+      "checked": false
+    },
+    {
+      "id": "3449077.5871969936",
+      "name": "",
+      "price": 0,
+      "checked": false
+    },
+    {
+      "id": 49354.47733414973,
+      "name": "Dua Lipa",
+      "price": 909,
+      "checked": false
+    },
+    {
+      "id": 479934.670320744,
+      "name": "Dua Lipa",
+      "price": 9099,
+      "checked": false
+    },
+    {
+      "id": 2587930.9845189378,
+      "name": "Dua Lipa",
+      "price": 9099,
+      "checked": false
+    },
+    {
+      "id": 6424162.496747325,
+      "name": "Dua Lipa",
+      "price": 9099,
+      "checked": false
+    },
+    {
+      "id": 5841701.270920782,
+      "name": "Dua",
+      "price": 908,
+      "checked": false
+    }
+  ]
+}
